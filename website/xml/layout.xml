@@ -1,0 +1,61 @@
+<!DOCTYPE StreamControlLayout>
+	<layout width="450" height="320">
+
+		<!-- Match Number -->
+		<label x="10" y="10" width="32" height="15">Set Up</label>
+			<line x="10" y="25" width="32" height="3"/>
+			<label x="19" y="38" width="32" height="15">#1</label>
+			<label x="19" y="68" width="32" height="15">#2</label>
+			<label x="19" y="98" width="32" height="15">#3</label>
+			<label x="19" y="128" width="32" height="15">#4</label>
+			<label x="19" y="158" width="32" height="15">#5</label>
+			<label x="19" y="188" width="32" height="15">#6</label>
+			<label x="19" y="218" width="32" height="15">#7</label>
+			<label x="19" y="248" width="32" height="15">#8</label>
+			
+
+
+		<!-- Set Up -->
+		<label x="52" y="10" width="73" height="15">Match Number</label>
+			<line x="52" y="25" width="73" height="3"/>
+			<lineEdit id="m1" x="52" y="35" width="73" height="22">#</lineEdit>
+			<lineEdit id="m2" x="52" y="65" width="73" height="22">#</lineEdit>
+			<lineEdit id="m3" x="52" y="95" width="73" height="22">#</lineEdit>
+			<lineEdit id="m4" x="52" y="125" width="73" height="22">#</lineEdit>
+			<lineEdit id="m5" x="52" y="155" width="73" height="22">#</lineEdit>
+			<lineEdit id="m6" x="52" y="185" width="73" height="22">#</lineEdit>
+			<lineEdit id="m7" x="52" y="215" width="73" height="22">#</lineEdit>
+			<lineEdit id="m8" x="52" y="245" width="73" height="22">#</lineEdit>
+			
+
+			<!-- Players-->
+		<label x="135" y="10" width="250" height="15">Players</label>
+			<line x="135" y="25" width="250" height="3"/>
+			<lineEdit id="s1p1" x="135" y="35" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s1p2" x="265" y="35" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s2p1" x="135" y="65" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s2p2" x="265" y="65" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s3p1" x="135" y="95" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s3p2" x="265" y="95" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s4p1" x="135" y="125" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s4p2" x="265" y="125" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s5p1" x="135" y="155" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s5p2" x="265" y="155" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s6p1" x="135" y="185" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s6p2" x="265" y="185" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s7p1" x="135" y="215" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s7p2" x="265" y="215" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+			<lineEdit id="s8p1" x="135" y="245" width="120" height="20" dataSet="players.csv">Player 1</lineEdit>
+			<lineEdit id="s8p2" x="265" y="245" width="120" height="20" dataSet="players.csv">Player 2</lineEdit>
+
+
+		<button type="reset" x="395" y="35" width="41" height="22" tooltip="Reset line" id="reset" reset="m1,s1p1,s1p2">Reset</button>
+		<button type="reset" x="395" y="65" width="41" height="22" tooltip="Reset line" id="reset2" reset="m2,s2p1,s2p2">Reset</button>
+		<button type="reset" x="395" y="95" width="41" height="22" tooltip="Reset line" id="reset3" reset="m3,s3p1,s3p2">Reset</button>
+		<button type="reset" x="395" y="125" width="41" height="22" tooltip="Reset line" id="reset4" reset="m4,s4p1,s4p2">Reset</button>
+		<button type="reset" x="395" y="155" width="41" height="22" tooltip="Reset line" id="reset5" reset="m5,s5p1,s5p2">Reset</button>
+		<button type="reset" x="395" y="185" width="41" height="22" tooltip="Reset line" id="reset6" reset="m6,s6p1,s6p2">Reset</button>
+		<button type="reset" x="395" y="215" width="41" height="22" tooltip="Reset line" id="reset7" reset="m7,s7p1,s7p2">Reset</button>
+		<button type="reset" x="395" y="245" width="41" height="22" tooltip="Reset line" id="reset8" reset="m8,s8p1,s8p2">Reset</button>
+
+	</layout>
