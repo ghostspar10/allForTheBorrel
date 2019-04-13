@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-    <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/index.css">
 
 <body>
-<video autoplay muted loop id="backVid" plays-inline>
-    <source src="assets/seyana.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop id="backVid" plays-inline>
+        <source src="assets/seyana.mp4" type="video/mp4">
+    </video>
 
-<button type="button" id="hideVid" onclick="changeVisibility()">
-    Hide Video
-</button>
+        <!-- Video Buttons -->
+        <div id="vidButtons">
+            <button type="button" id="videoButton" onclick="changeVisibility()">
+                Hide Video
+            </button>
 
-<button type="button" id="vidAudio" onclick="changeAudio()">
-    Sound On
-</button>
+            <button type="button" id="audioButton" onclick="changeAudio()">
+                Sound On
+            </button>
+
+            <button type="button" id="pauseButton" onclick="changePause()">
+                Pause
+            </button>
+        </div>
+
+        <!-- Button Hiding -->
+        <div style="margin-top: 5px;">
+            <button type="button" id="hideButton" onclick="hideButtons()">
+                Hide Buttons
+            </button>
+        </div>
+
 
     <center>
+        <!-- Table -->
         <table id="main">
             <tr>
                 <td><b><u>Set Up</u></b></td>
