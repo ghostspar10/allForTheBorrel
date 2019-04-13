@@ -29,6 +29,14 @@ td {
 }
 
 #main {
-    background-color:  rgba(255,255,255,0.95);
+    background-color:  rgba(255,255,255,0.98);
     margin-top: 50px;
+}
+
+#hideVid, 
+#vidAudio {
+    height: 30px;
+    width: 100px;
+    font-size: 24px;
+    font-family: "myFont";
 }
