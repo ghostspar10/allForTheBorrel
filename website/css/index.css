@@ -41,7 +41,13 @@ td {
     width: 100px;
     font-size: 24px;
     font-family: "myFont";
+    opacity: 0.5;
+}
 
+#videoButton:hover, 
+#audioButton:hover,
+#pauseButton:hover {
+    opacity: 1;
 }
 
 .changeDiv {
@@ -52,20 +58,36 @@ td {
 #changeButton {
     position: absolute;
     left: 92%;
-    top: 1%;
+    top: 0.6%;
     height: 30px;
     width: 140px;
     font-size: 24px;
     font-family: "myFont";
+    opacity: 0.5;
 }
 
 .changeDiv input[type=file] {
     position: absolute;
     left: 92%;
-    top: 1%;
+    top: 0.6%;
     height: 30px;
     width: 140px;
     opacity: 0;
+}
+
+#tableButton {
+    position: absolute;
+    left: 0.5%;
+    bottom: 1%;
+    height: 30px;
+    width: 140px;
+    font-size: 24px;
+    font-family: "myFont";
+    opacity: 0.5;
+}
+
+#tableButton:hover {
+    opacity: 1;
 }
 
 #hideButton {

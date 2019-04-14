@@ -2,6 +2,7 @@
 var visible = true;
 var paused = false;
 var buttons = true;
+var table = true;
 
 function changeVisibility() {
     if (visible) {
@@ -52,6 +53,7 @@ function hideButtons() {
     if (buttons) {
         $('#vidButtons').hide();
         $('#vidButtons2').hide();
+        $('#tableButton').hide();
         $('#hideButton').css('opacity', 0.1)
         $('#hideButton').html("Show Buttons")
         buttons = false;
@@ -59,9 +61,23 @@ function hideButtons() {
     else if (buttons == false) {
         $('#vidButtons').show();
         $('#vidButtons2').show();
+        $('#tableButton').show();
         $('#hideButton').css('opacity', 1)
         $('#hideButton').html("Hide Buttons")
         buttons = true;
+    }
+}
+
+function hideTable() {
+    if (table) {
+        $('#main').hide();
+        table = false;
+        $('#tableButton').html("Show Table")
+    }
+    else if (table == false) {
+        $('#main').show();
+        table = true;
+        $('#tableButton').html("Hide Table")
     }
 }
 
@@ -70,8 +86,15 @@ $('#hideButton').hover(function() {
 },
 function () {
     if (buttons == false) {
-        $('#hideButton').css('opacity', 0.1)
+        $('#hideButton').css('opacity', 1)
     }
+});
+
+$('#vidButtons2').hover(function() {
+    $('#changeButton').css('opacity', 1)
+},
+function () {
+    $('#changeButton').css('opacity', 0.5)
 });
 
 (function localFileVideoPlayer() {
