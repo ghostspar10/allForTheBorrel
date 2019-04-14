@@ -54,7 +54,6 @@ function hideButtons() {
         $('#vidButtons').hide();
         $('#vidButtons2').hide();
         $('#tableButton').hide();
-        $('#hideButton').css('opacity', 0.1)
         $('#hideButton').html("Show Buttons")
         buttons = false;
     }
@@ -62,7 +61,6 @@ function hideButtons() {
         $('#vidButtons').show();
         $('#vidButtons2').show();
         $('#tableButton').show();
-        $('#hideButton').css('opacity', 1)
         $('#hideButton').html("Hide Buttons")
         buttons = true;
     }
@@ -82,12 +80,10 @@ function hideTable() {
 }
 
 $('#hideButton').hover(function() {
-        $('#hideButton').css('opacity', 1)
+        $('#hideButton').css('opacity', 1);
 },
 function () {
-    if (buttons == false) {
-        $('#hideButton').css('opacity', 1)
-    }
+        $('#hideButton').css('opacity', 0.5);
 });
 
 $('#vidButtons2').hover(function() {
