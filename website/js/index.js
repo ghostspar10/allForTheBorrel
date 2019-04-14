@@ -51,12 +51,14 @@ function changePause() {
 function hideButtons() {
     if (buttons) {
         $('#vidButtons').hide();
+        $('#vidButtons2').hide();
         $('#hideButton').css('opacity', 0.1)
         $('#hideButton').html("Show Buttons")
         buttons = false;
     }
     else if (buttons == false) {
         $('#vidButtons').show();
+        $('#vidButtons2').show();
         $('#hideButton').css('opacity', 1)
         $('#hideButton').html("Hide Buttons")
         buttons = true;
@@ -71,3 +73,29 @@ function () {
         $('#hideButton').css('opacity', 0.1)
     }
 });
+
+(function localFileVideoPlayer() {
+	'use strict'
+  var URL = window.URL || window.webkitURL
+
+  var playSelectedFile = function (event) {
+    var file = this.files[0]
+    var type = file.type
+    var videoNode = document.querySelector('video')
+    var canPlay = videoNode.canPlayType(type)
+    if (canPlay === '') canPlay = 'no'
+
+    var fileURL = URL.createObjectURL(file)
+    videoNode.src = fileURL
+
+    if (paused) {
+        paused = false;
+      $('#pauseButton').html("Pause")
+    }
+  }
+  var inputNode = document.querySelector('input')
+  inputNode.addEventListener('change', playSelectedFile, false)
+
+
+  
+})()

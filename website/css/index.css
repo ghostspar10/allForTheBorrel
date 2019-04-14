@@ -3,6 +3,8 @@
     src: url("AlegreSans-Regular.ttf");
 }
 
+
+/* Setting up the table */
 table,
 th,
 td {
@@ -19,6 +21,8 @@ td {
     height: 80px;
 }
 
+
+/* Video CSS */
 #backVid {
     position: fixed;
     right: 0;
@@ -28,12 +32,8 @@ td {
     z-index: -100;
 }
 
-#main {
-    display: inline-table;
-    background-color:  rgba(255,255,255,0.98);
-    margin-top: 50px;
-}
 
+/* Button CSS */
 #videoButton, 
 #audioButton,
 #pauseButton {
@@ -44,9 +44,52 @@ td {
 
 }
 
+.changeDiv {
+    float: right;
+    overflow: hidden;
+}
+
+#changeButton {
+    position: absolute;
+    left: 92%;
+    top: 1%;
+    height: 30px;
+    width: 140px;
+    font-size: 24px;
+    font-family: "myFont";
+}
+
+.changeDiv input[type=file] {
+    position: absolute;
+    left: 92%;
+    top: 1%;
+    height: 30px;
+    width: 140px;
+    opacity: 0;
+}
+
 #hideButton {
     height: 30px;
     width: 140px;
     font-size: 24px;
     font-family: "myFont";
+}
+
+
+/* CSS for the table */
+#main {
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    width: 70%;
+    display: block;
+    background-color:  rgba(255,255,255,0.99);
+}
+
+#s1 {
+    width: 10%;
+}
+
+#m1 {
+    width: 15%;
 }
